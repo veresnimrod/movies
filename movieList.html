@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="movieApi.js" defer ></script>
+    <script src="movieList.js" defer ></script>
+  </head>
+  <body>
+    <button data-signout class="signoutbutton hidden">Sign Out</button>
+    <div loginform class="loginform">
+      <h1 data-login>Login</h1>
+      <h1 data-register class="hidden">Register</h1>
+      <form data-form>
+        <div>
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" />
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" />
+        </div>
+        <div data-register class="hidden">
+          <label for="repeat_password">Retype Password</label>
+          <input type="password" id="repeat_password" name="repeat_password" />
+        </div>
+        <div>
+          <button type="submit" data-login>Login</button>
+          <button type="submit" data-register class="hidden">Register</button>
+        </div>
+        <a href="#" data-login="switch">
+          If you don't already have an account click here to register
+        </a>
+        <a href="#" data-register="switch" class="hidden">
+          If you already have an account click here to login
+        </a>
+      </form>
+    </div>
+      <div class="container">
+    
+  </div>
+</body>
+</html>
